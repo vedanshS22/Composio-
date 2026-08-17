@@ -1,0 +1,21 @@
+app_id,category,one_liner,auth_methods,self_serve_status,api_surface_type,buildability_verdict,blocker,evidence
+1,CRM and Sales,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://developer.salesforce.com/docs
+2,CRM and Sales,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: ValidationError.,https://developers.hubspot.com/docs/api/overview
+11,Support and Helpdesk,"Zendesk API reference docs covering ticketing, help center, chat, voice, and more.",,self_serve_free,rest,yes,,https://developer.zendesk.com/api-reference/
+12,Support and Helpdesk,Intercom Developer Platform offers SDKs and REST APIs for building integrations with Intercom.,oauth2; token,self_serve_free,rest,yes,,https://developers.intercom.com/docs
+21,Communications and Messaging,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://api.slack.com/
+22,Communications and Messaging,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://www.twilio.com/docs
+31,Marketing Ads Email and Social,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: ValidationError.,https://developers.google.com/google-ads/api/docs/start
+35,Marketing Ads Email and Social,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://mailchimp.com/developer/marketing/docs/fundamentals/
+41,Ecommerce,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://shopify.dev/docs/api
+42,Ecommerce,WooCommerce REST API allows external systems to connect via API keys.,api_key,self_serve_free,rest,yes,,https://woocommerce.com/document/woocommerce-rest-api/; https://woocommerce.com/document/woocommerce-rest-api/
+51,Data SEO and Scraping,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://docs.dataforseo.com/v3/
+55,Data SEO and Scraping,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://docs.apify.com/api/v2
+61,Developer Infra and Data Platforms,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://docs.github.com/rest
+62,Developer Infra and Data Platforms,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: ValidationError.,https://vercel.com/docs/rest-api
+71,Productivity and Project Management,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://developers.notion.com/reference
+72,Productivity and Project Management,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: ValidationError.,https://airtable.com/developers/web/api/introduction
+81,Finance and Fintech,Stripe API provides RESTful endpoints for payment processing and related services.,api_key,self_serve_free,rest,yes,,https://docs.stripe.com/api
+82,Finance and Fintech,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://plaid.com/docs/
+95,AI Research and Media-native,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: ValidationError.,https://docs.reducto.ai/
+98,AI Research and Media-native,Unknown — requires a grounded documentation extraction.,,unknown,unknown,no,Extraction unavailable or invalid: HTTPError.,https://github.com/mermaid-js/mermaid-cli

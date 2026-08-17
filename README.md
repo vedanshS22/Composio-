@@ -5,6 +5,47 @@ machine-readable case-study page. It follows the requested reading/decision
 order: `README.md` → `TASK.md` → `CONTEXT.md` → `IMPLEMENTATION_PLAN.md`, then
 the supporting architecture documents.
 
+## Quick Start — add any companies and run the agent
+
+1. Clone the repo, create a virtual environment, and install dependencies:
+
+   ```powershell
+   py -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+   ```
+
+2. Configure local credentials only (never commit `.env`):
+
+   ```powershell
+   Copy-Item .env.example .env
+   ```
+
+   Add `COMPOSIO_API_KEY` plus the matching LLM provider key: `OPENROUTER_API_KEY` for `LLM_PROVIDER=openrouter`, or `AICREDITS_API_KEY` for `LLM_PROVIDER=aicredits`.
+
+3. Add or replace companies in [data/apps.csv](data/apps.csv). Preferred format:
+
+   ```csv
+   name,website,category
+   Salesforce,https://salesforce.com,CRM & Sales
+   Slack,https://slack.com,Communications & Messaging
+   ```
+
+   `id` is optional for a fresh database. `hint_url` remains a supported legacy alias for `website`. No company-specific code is needed.
+
+4. Load the input, research, validate, and open the static HTML:
+
+   ```powershell
+   py scripts/seed_db.py
+   py scripts/run_quality_research.py --all --live-output report/dist/index.html
+   py scripts/verify_results.py
+   Start-Process report/dist/index.html
+   ```
+
+   For selected companies use `py scripts/run_quality_research.py --apps "Slack,Salesforce"`. To continue only apps missing from an interrupted trace use `py scripts/run_quality_research.py --resume`.
+
+**Outputs:** input is `data/apps.csv`; append-only per-app traces are saved in `data/logs/quality_traces/quality_<timestamp>/`; validation is written to that run's `quality_gate.json`; and the live standalone report is `report/dist/index.html`. The legacy persistent report command remains `py scripts/build_report.py`.
+
 ## What is implemented
 
 - A fixed 100-app seed (`data/apps_seed.csv`), never mutated by the agent.

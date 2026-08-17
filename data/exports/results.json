@@ -1,0 +1,733 @@
+{
+  "generated_at": "2026-08-17T12:02:03.717022+00:00",
+  "apps": [
+    {
+      "app_id": 1,
+      "category": "CRM and Sales",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://developer.salesforce.com/docs",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Salesforce"
+    },
+    {
+      "app_id": 2,
+      "category": "CRM and Sales",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: ValidationError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://developers.hubspot.com/docs/api/overview",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "HubSpot"
+    },
+    {
+      "app_id": 11,
+      "category": "Support and Helpdesk",
+      "one_liner": "Zendesk API reference docs covering ticketing, help center, chat, voice, and more.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "self_serve_free",
+      "gating_reason": null,
+      "api_surface_type": "rest",
+      "api_breadth_notes": "REST APIs for ticketing, help center, chat, voice, AI agents, messaging, custom data, omnichannel, and SDKs.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "yes",
+      "blocker": null,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.zendesk.com/api-reference/",
+          "note": "No explicit authentication method listed in the provided text."
+        }
+      ],
+      "confidence": 0.8,
+      "needs_human_review": false,
+      "mcp_fallback": false,
+      "model_used": "openai/gpt-oss-20b",
+      "name": "Zendesk"
+    },
+    {
+      "app_id": 12,
+      "category": "Support and Helpdesk",
+      "one_liner": "Intercom Developer Platform offers SDKs and REST APIs for building integrations with Intercom.",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "auth_other_label": null,
+      "self_serve_status": "self_serve_free",
+      "gating_reason": null,
+      "api_surface_type": "rest",
+      "api_breadth_notes": "Provides REST APIs for data access and Canvas Kit framework for UI components.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "yes",
+      "blocker": null,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.intercom.com/docs",
+          "note": "Auth via OAuth2 and Access Token"
+        }
+      ],
+      "confidence": 0.9,
+      "needs_human_review": false,
+      "mcp_fallback": false,
+      "model_used": "openai/gpt-oss-20b",
+      "name": "Intercom"
+    },
+    {
+      "app_id": 21,
+      "category": "Communications and Messaging",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://api.slack.com/",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Slack"
+    },
+    {
+      "app_id": 22,
+      "category": "Communications and Messaging",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://www.twilio.com/docs",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Twilio"
+    },
+    {
+      "app_id": 31,
+      "category": "Marketing Ads Email and Social",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: ValidationError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://developers.google.com/google-ads/api/docs/start",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Google Ads"
+    },
+    {
+      "app_id": 35,
+      "category": "Marketing Ads Email and Social",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Mailchimp"
+    },
+    {
+      "app_id": 41,
+      "category": "Ecommerce",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://shopify.dev/docs/api",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Shopify"
+    },
+    {
+      "app_id": 42,
+      "category": "Ecommerce",
+      "one_liner": "WooCommerce REST API allows external systems to connect via API keys.",
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_other_label": null,
+      "self_serve_status": "self_serve_free",
+      "gating_reason": null,
+      "api_surface_type": "rest",
+      "api_breadth_notes": "Provides endpoints for orders, products, customers, etc. via REST.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "yes",
+      "blocker": null,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+          "note": "API keys (Consumer Key & Consumer Secret) are used for authentication."
+        },
+        {
+          "field": "api_surface_type",
+          "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+          "note": "API surface is REST with documented endpoints."
+        }
+      ],
+      "confidence": 0.9,
+      "needs_human_review": false,
+      "mcp_fallback": false,
+      "model_used": "openai/gpt-oss-20b",
+      "name": "WooCommerce"
+    },
+    {
+      "app_id": 51,
+      "category": "Data SEO and Scraping",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://docs.dataforseo.com/v3/",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "DataForSEO"
+    },
+    {
+      "app_id": 55,
+      "category": "Data SEO and Scraping",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://docs.apify.com/api/v2",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Apify"
+    },
+    {
+      "app_id": 61,
+      "category": "Developer Infra and Data Platforms",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://docs.github.com/rest",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "GitHub"
+    },
+    {
+      "app_id": 62,
+      "category": "Developer Infra and Data Platforms",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: ValidationError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://vercel.com/docs/rest-api",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Vercel"
+    },
+    {
+      "app_id": 71,
+      "category": "Productivity and Project Management",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://developers.notion.com/reference",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Notion"
+    },
+    {
+      "app_id": 72,
+      "category": "Productivity and Project Management",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: ValidationError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://airtable.com/developers/web/api/introduction",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Airtable"
+    },
+    {
+      "app_id": 81,
+      "category": "Finance and Fintech",
+      "one_liner": "Stripe API provides RESTful endpoints for payment processing and related services.",
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_other_label": null,
+      "self_serve_status": "self_serve_free",
+      "gating_reason": null,
+      "api_surface_type": "rest",
+      "api_breadth_notes": "Resource-oriented URLs, form-encoded request bodies, JSON responses, standard HTTP verbs and status codes.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "yes",
+      "blocker": null,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.stripe.com/api",
+          "note": "API authentication is performed using an API key."
+        }
+      ],
+      "confidence": 0.9,
+      "needs_human_review": false,
+      "mcp_fallback": false,
+      "model_used": "openai/gpt-oss-20b",
+      "name": "Stripe"
+    },
+    {
+      "app_id": 82,
+      "category": "Finance and Fintech",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://plaid.com/docs/",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Plaid"
+    },
+    {
+      "app_id": 95,
+      "category": "AI Research and Media-native",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: ValidationError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://docs.reducto.ai/",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Reducto"
+    },
+    {
+      "app_id": 98,
+      "category": "AI Research and Media-native",
+      "one_liner": "Unknown \u2014 requires a grounded documentation extraction.",
+      "auth_methods": [],
+      "auth_other_label": null,
+      "self_serve_status": "unknown",
+      "gating_reason": null,
+      "api_surface_type": "unknown",
+      "api_breadth_notes": "Unknown; no grounded extraction was produced.",
+      "mcp_exists": false,
+      "mcp_notes": null,
+      "buildability_verdict": "no",
+      "blocker": "Extraction unavailable or invalid: HTTPError.",
+      "evidence": [
+        {
+          "field": "source_page",
+          "url": "https://github.com/mermaid-js/mermaid-cli",
+          "note": "Fetched source was retained; no grounded extraction was produced."
+        }
+      ],
+      "confidence": 0.0,
+      "needs_human_review": true,
+      "mcp_fallback": true,
+      "model_used": "unavailable",
+      "name": "Mermaid CLI"
+    }
+  ],
+  "patterns": {
+    "total_apps": 20,
+    "auth_distribution": {
+      "oauth2": 1,
+      "token": 1,
+      "api_key": 2
+    },
+    "self_serve_split": {
+      "unknown": 16,
+      "self_serve_free": 4
+    },
+    "buildability_split": {
+      "no": 16,
+      "yes": 4
+    },
+    "top_blockers": [
+      {
+        "blocker": "Extraction unavailable or invalid: HTTPError.",
+        "count": 11
+      },
+      {
+        "blocker": "Extraction unavailable or invalid: ValidationError.",
+        "count": 5
+      }
+    ],
+    "category_gating_skew": {
+      "CRM and Sales": {
+        "total": 2,
+        "self_serve": 0,
+        "gated": 0,
+        "self_serve_pct": 0.0
+      },
+      "Support and Helpdesk": {
+        "total": 2,
+        "self_serve": 2,
+        "gated": 0,
+        "self_serve_pct": 100.0
+      },
+      "Communications and Messaging": {
+        "total": 2,
+        "self_serve": 0,
+        "gated": 0,
+        "self_serve_pct": 0.0
+      },
+      "Marketing Ads Email and Social": {
+        "total": 2,
+        "self_serve": 0,
+        "gated": 0,
+        "self_serve_pct": 0.0
+      },
+      "Ecommerce": {
+        "total": 2,
+        "self_serve": 1,
+        "gated": 0,
+        "self_serve_pct": 50.0
+      },
+      "Data SEO and Scraping": {
+        "total": 2,
+        "self_serve": 0,
+        "gated": 0,
+        "self_serve_pct": 0.0
+      },
+      "Developer Infra and Data Platforms": {
+        "total": 2,
+        "self_serve": 0,
+        "gated": 0,
+        "self_serve_pct": 0.0
+      },
+      "Productivity and Project Management": {
+        "total": 2,
+        "self_serve": 0,
+        "gated": 0,
+        "self_serve_pct": 0.0
+      },
+      "Finance and Fintech": {
+        "total": 2,
+        "self_serve": 1,
+        "gated": 0,
+        "self_serve_pct": 50.0
+      },
+      "AI Research and Media-native": {
+        "total": 2,
+        "self_serve": 0,
+        "gated": 0,
+        "self_serve_pct": 0.0
+      }
+    }
+  },
+  "verification": {
+    "fields_checked": 240,
+    "matched": 199,
+    "accuracy": 75.0,
+    "pass1_accuracy": 90.8,
+    "pass2_accuracy": 75.0,
+    "pass1_fields_checked": 120,
+    "pass2_fields_checked": 120,
+    "mismatches": [
+      {
+        "app": "Intercom",
+        "field": "one_liner",
+        "pipeline_value": "\"Unknown \\u2014 requires a grounded documentation extraction.\"",
+        "verified_value": "\"The Intercom Developer Platform is a suite of SDKs and APIs for building apps that connect with Intercom.\"",
+        "notes": null
+      },
+      {
+        "app": "Intercom",
+        "field": "auth_methods",
+        "pipeline_value": "[]",
+        "verified_value": "[\"oauth2\", \"token\"]",
+        "notes": null
+      },
+      {
+        "app": "Intercom",
+        "field": "self_serve_status",
+        "pipeline_value": "\"unknown\"",
+        "verified_value": "\"paid_plan_required\"",
+        "notes": null
+      },
+      {
+        "app": "Intercom",
+        "field": "api_surface_type",
+        "pipeline_value": "\"unknown\"",
+        "verified_value": "\"rest\"",
+        "notes": null
+      },
+      {
+        "app": "Intercom",
+        "field": "buildability_verdict",
+        "pipeline_value": "\"no\"",
+        "verified_value": "\"yes\"",
+        "notes": null
+      },
+      {
+        "app": "Intercom",
+        "field": "mcp_exists",
+        "pipeline_value": "false",
+        "verified_value": "true",
+        "notes": null
+      },
+      {
+        "app": "Airtable",
+        "field": "one_liner",
+        "pipeline_value": "\"Unknown \\u2014 requires a grounded documentation extraction.\"",
+        "verified_value": "\"A RESTful API for integrating Airtable data with external systems.\"",
+        "notes": null
+      },
+      {
+        "app": "Airtable",
+        "field": "auth_methods",
+        "pipeline_value": "[]",
+        "verified_value": "[\"oauth2\", \"api_key\"]",
+        "notes": null
+      },
+      {
+        "app": "Airtable",
+        "field": "self_serve_status",
+        "pipeline_value": "\"unknown\"",
+        "verified_value": "\"self_serve_free\"",
+        "notes": null
+      },
+      {
+        "app": "Airtable",
+        "field": "api_surface_type",
+        "pipeline_value": "\"unknown\"",
+        "verified_value": "\"rest\"",
+        "notes": null
+      },
+      {
+        "app": "Airtable",
+        "field": "buildability_verdict",
+        "pipeline_value": "\"no\"",
+        "verified_value": "\"yes\"",
+        "notes": null
+      }
+    ]
+  }
+}

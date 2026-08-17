@@ -49,6 +49,14 @@ def _completed_seed_ids(trace_dir: Path, seeds: list[AppSeed]) -> set[int]:
     return completed
 
 
+def _latest_quality_trace_dir() -> Path:
+    root = ROOT / "data" / "logs" / "quality_traces"
+    candidates = [path for path in root.glob("quality_*") if path.is_dir()]
+    if not candidates:
+        raise ValueError("--resume requires an existing data/logs/quality_traces/quality_* run")
+    return max(candidates, key=lambda path: path.stat().st_mtime)
+
+
 TRANSIENT_MARKERS = ("connection", "timeout", "429", "500", "502", "503", "504", "taskgroup")
 
 def _sanitize_error(exc: Exception | str) -> str:
@@ -132,8 +140,9 @@ async def main_async(args: argparse.Namespace) -> Path:
     load_dotenv()
     db = ROOT / "data" / "research.db"
     seeds = list_seeds(db)
-    if args.remaining_from_trace:
-        trace_dir = args.remaining_from_trace.resolve()
+    trace_selection = _latest_quality_trace_dir() if args.resume else args.remaining_from_trace
+    if trace_selection:
+        trace_dir = trace_selection.resolve()
         if not trace_dir.is_dir():
             raise ValueError(f"completed trace directory does not exist: {trace_dir}")
         completed_ids = _completed_seed_ids(trace_dir, seeds)
@@ -178,6 +187,7 @@ def build_parser() -> argparse.ArgumentParser:
     group.add_argument("--sample", help="Named fixed seed sample (verification20)")
     group.add_argument("--all", action="store_true", help="Every app in the fixed seed dataset")
     group.add_argument("--remaining-from-trace", type=Path, help="Every seed without a trace in this append-only completed-run directory")
+    group.add_argument("--resume", action="store_true", help="Continue only apps missing from the most recent quality-trace run")
     parser.add_argument("--concurrency", type=int, default=1, help="Independent app traces to run concurrently (default: 1)")
     parser.add_argument("--max-llm-calls-per-app", type=int, default=int(os.getenv("LLM_MAX_CALLS_PER_APP", "4")), help="Hard cap for initial extraction plus generic field recovery (default: 4)")
     parser.add_argument("--live-output", type=Path, help="Rebuild this static 100-app report after every completed trace.")
